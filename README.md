@@ -1,7 +1,3 @@
-# dev-application
-
-> Application Submission for Give Pulse
-
 ## Build Setup
 
 ``` bash
@@ -9,14 +5,19 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run watch
 
-# build for production with minification
+# build for production
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# install composer dependencies
+composer install
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
 # give-pulse-application
+- Create the data.
+- List the credentials in `/app/core/config.php`
+- Seed the database.
+- To launch, run:
+```php -S localhost:3000```

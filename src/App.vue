@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <h2>Currently sorting by: {{ sortMethod }}</h2>
         <div>
             <button @click="update('created')">Sort by Created Time</button>
             <button @click="update('start_date_time')">Sort by Start Time</button>
@@ -16,6 +17,7 @@
     name: 'App',
     data() {
       return {
+        sortMethod: null,
         events: [],
         width: 600,
         height: 400
@@ -58,7 +60,7 @@
             .append('svg:circle')
             .attr('cx', function (event) { return event.x; })
             .attr('cy', function (event) { return event.y; })
-            .attr('r', '2px')
+            .attr('r', '3px')
             .attr('fill', 'black');
       },
 
@@ -69,6 +71,7 @@
        * @param property
        */
       prepareCoordinates: function (event, property) {
+        this.sortMethod = property;
         const dateTime = new Date(event[property]);
         event.x = this.width * dateTime.getHours() / 24 || 0;
         event.y = this.height * dateTime.getMinutes() / 60 || 0;
@@ -86,7 +89,6 @@
           sortedEvents.push(event);
         });
         this.events = sortedEvents;
-        console.log('hit');
       },
 
       update(property) {
