@@ -1,0 +1,43 @@
+body {
+	font-family : "Lato Light", sans-serif;
+}
+
+body * {
+	font-family : "Lato Light", sans-serif;
+	color: #333333;
+}
+
+h1 {font-size : 32px;margin-top:0;}
+h2 {font-size : 28px;margin-top:0;}
+h3 {font-size : 24px;margin-top:0;}
+h4 {font-size : 22px;margin-top:0;}
+h5 {font-size : 16px;margin-top:0;}
+h6 {font-size : 14px;margin-top:0;}
+p, a, input, select, textarea, button {font-size : 14px;}
+
+h1 a {font-size : inherit;}
+h2 a {font-size : inherit;}
+h3 a {font-size : inherit;}
+h4 a {font-size : inherit;}
+h5 a {font-size : inherit;}
+h6 a {font-size : inherit;}
+
+@media ( max-width : 767px ) {
+	h1 {font-size : 28px;}
+	h2 {font-size : 24px;}
+	h3 {font-size : 22px;}
+	h4 {font-size : 16px;}
+	h5 {font-size : 14px;}
+	h6 {font-size : 14px;}
+	p, input, select, textarea {font-size : 14px;}
+}
+
+@media ( max-width : 576px ) {
+	h1 {font-size : 28px;}
+	h2 {font-size : 24px;}
+	h3 {font-size : 22px;}
+	h4 {font-size : 16px;}
+	h5 {font-size : 14px;}
+	h6 {font-size : 14px;}
+	p, input, select, textarea {font-size : 14px;}
+}

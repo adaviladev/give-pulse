@@ -1,0 +1,24 @@
+.list-wrapper {
+	border-radius: 2px;
+	overflow : hidden;
+	margin-bottom: 30px;
+}
+
+.list-item:nth-child(odd) {
+	background-color: #ffecb3;
+}
+
+.list-item:nth-child(even) {
+	background-color: #fff8e1;
+}
+
+.list-item-content {
+	width: 85%;
+	margin: 0 auto;
+	padding: 8px;
+}
+
+.list-container [class^="col-"],
+.list-container [class*=" col-"]{
+	margin-bottom: 0 !important;
+}

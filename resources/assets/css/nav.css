@@ -1,0 +1,143 @@
+/*
+Edited nav layouts
+*/
+
+nav {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index : 0;
+	background-color: #333;
+}
+
+.navigation,
+.sub-menu {
+	margin: 0;
+}
+
+.sub-menu {
+	background-color: #3f3f3f;
+}
+
+.nav-item {
+	text-align: right;
+}
+
+.nav-item a {
+	text-decoration : none;
+	transition      : all .5s;
+	display         : block;
+}
+
+.parent-menu a {
+	padding         : 16px 12px;
+}
+
+.sub-menu .nav-item a {
+	padding         : 12px 28px;
+}
+
+.nav-item a {
+	color: #ffffff;
+}
+
+.nav-item a:hover {
+	background-color : #ffc107;
+}
+
+button.nav-trigger {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 96px;
+	height: 96px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: 0;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+button.nav-trigger:focus {
+	outline: none;
+}
+
+button.nav-trigger span {
+	display: block;
+	position: absolute;
+	top: 44px;
+	left: 18px;
+	right: 18px;
+	height: 8px;
+	background: white;
+}
+
+button.nav-trigger span::before,
+button.nav-trigger span::after {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background-color: #fff;
+	content: "";
+}
+
+button.nav-trigger span::before {
+	top: -20px;
+}
+
+button.nav-trigger span::after {
+	bottom: -20px;
+}
+
+button.nav-trigger span {
+	transition: transform 0.3s;
+}
+
+button.nav-trigger span::before {
+	transform-origin: top left;
+	transition: transform 0.3s, width 0.3s, top 0.3s;
+}
+
+button.nav-trigger span::after {
+	transform-origin: bottom left;
+	transition: transform 0.3s, width 0.3s, bottom 0.3s;
+}
+
+/* active state, i.e. menu open */
+button.nav-trigger.is-active {
+	/*background-color: #e95d00;*/
+}
+
+button.nav-trigger.is-active span {
+	transform: rotate(540deg);
+}
+
+button.nav-trigger.is-active span::before,
+button.nav-trigger.is-active span::after {
+	width: 50%;
+}
+
+button.nav-trigger.is-active span::before {
+	top: 0;
+	transform: translateX(-8px) translateY(4px) rotate(-45deg);
+}
+
+button.nav-trigger.is-active span::after {
+	bottom: 0;
+	transform: translateX(-8px) translateY(-4px) rotate(45deg);
+}
+
+.open-menu {
+	position: relative;
+	right: 200px;
+}

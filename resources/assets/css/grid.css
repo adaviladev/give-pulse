@@ -1,0 +1,36 @@
+/* Locations Styling */
+
+.group-wrapper {
+	padding: 12px;
+	margin-bottom: 30px;
+}
+
+.grid-item {
+	margin: 0 auto 30px;
+}
+
+.grid-item h3 {
+	margin: 0;
+}
+
+.grid-item-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.grid-item-content {
+	width: 90%;
+	margin: 0 auto;
+	padding: 8px;
+}
+
+.grid-header-wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.location-content h2,
+.location-content p {
+	padding: 8px;
+	margin: 0;
+}

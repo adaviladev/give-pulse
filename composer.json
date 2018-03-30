@@ -1,0 +1,14 @@
+{
+  "name": "give-pulse/application-adrian",
+  "license": "MIT",
+  "description": "DB application project",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "classmap": [
+      "app/"
+    ]
+  }
+}
